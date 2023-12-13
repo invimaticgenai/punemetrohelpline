@@ -6,8 +6,8 @@ import streamlit as st
 openai.api_key = st.secrets["API_KEY"]
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-pinecone.init(api_key='6348c0b6-eb7a-4b83-8ff9-2c2c6ab11887', environment='gcp-starter')
-index = pinecone.Index('pine-chatbot')
+pinecone.init(api_key='dfab54ce-bbfd-4716-959f-2b61c1256043', environment='gcp-starter')
+index = pinecone.Index('punemetrochatbot')
 
 
 def find_match(input1):
